@@ -75,5 +75,23 @@ switch(pets>friendsPets){
 }
 console.log(mostPets)
 
+
+
+switch(true){
+  case pets > friendsPets : mostPets = pets;
+    console.log ('You have the most pets and you have ' + pets + " pets")
+  break;
+  case pets < friendsPets : mostPets = friendsPets;
+    console.log ('Your friend has the most pets and they have ' + friendsPets + " pets")
+  break;
+  case pets === friendsPets : mostPets = friendsPets;
+    console.log ("You both have " + pets +" pets")
+    break;
+  default:
+  console.log("Error");
+  break;
+}
+console.log (mostPets)
+
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 adventurous ? console.log("Adventures are great!"): console.log("How about we stay home?")
